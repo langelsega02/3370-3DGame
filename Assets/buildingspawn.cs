@@ -32,7 +32,7 @@ public class buildingspawn : MonoBehaviour
     void SpawnBuilding()
     {
         int randomIndex1 = Random.Range(0, buildingPrefabs.Length);
-        int randomSpawn1 = Random.Range(0, 10);
+        int randomSpawn1 = Random.Range(0, 5);
         int hazard = Random.Range(0, 4);
 
         GameObject selectedBuilding = buildingPrefabs[randomIndex1];
@@ -44,7 +44,7 @@ public class buildingspawn : MonoBehaviour
             if (randomIndex1 == 0)
             {
                 Instantiate(selectedBuilding, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.Euler(new Vector3(-90, 0, 0)));
-                if (randomSpawn1 == 9)
+                if (randomSpawn1 == 0)
                 {
                     Instantiate(coinPrefab, new Vector3(transform.position.x, transform.position.y + 15f, transform.position.z), Quaternion.Euler(new Vector3(-90, 0, 0)));
                 }
@@ -52,7 +52,7 @@ public class buildingspawn : MonoBehaviour
             else
             {
                 Instantiate(selectedBuilding, new Vector3(transform.position.x + 1.5f, transform.position.y, transform.position.z + 1), Quaternion.Euler(new Vector3(-90, 0, 0)));
-                if (randomSpawn1 == 9)
+                if (randomSpawn1 == 0)
                 {
                     Instantiate(coinPrefab, new Vector3(transform.position.x, transform.position.y + 15f, transform.position.z), Quaternion.Euler(new Vector3(-90, 0, 0)));
                 }
