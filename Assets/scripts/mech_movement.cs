@@ -8,7 +8,7 @@ public class mech_movement : MonoBehaviour
     public float centerPosition = 0f;
 
     public float snapSpeed = 30f;
-    public float jumpForce = 8f;
+    public float jumpForce = 10f;
 
     private bool isMoving = false;
     private float currentPosition;
