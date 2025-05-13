@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class mech_movement : MonoBehaviour
 {
-    public float leftPosition = -5f;
-    public float rightPosition = 5f;
+    public float leftPosition = -3f;
+    public float rightPosition = 3f;
     public float centerPosition = 0f;
 
     public float snapSpeed = 30f;
