@@ -184,8 +184,6 @@ PrefabInstance:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   m_SourcePrefab: {fileID: 100100000, guid: a3ac454ebcb68804abba337d02bd5557, type: 3}
 --- !u!1 &102988466
 GameObject:
@@ -518,14 +516,6 @@ CanvasRenderer:
   m_SourcePrefab: {fileID: 100100000, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
 --- !u!1001 &490120916
 >>>>>>> Stashed changes
-=======
-  m_SourcePrefab: {fileID: 100100000, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
---- !u!1001 &490120916
->>>>>>> Stashed changes
-=======
-  m_SourcePrefab: {fileID: 100100000, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
---- !u!1001 &490120916
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -814,8 +804,6 @@ PrefabInstance:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   m_SourcePrefab: {fileID: 100100000, guid: a07259197a6e36249983a150f735fa62, type: 3}
 --- !u!1 &626563262 stripped
 GameObject:
@@ -988,12 +976,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.0513964, y: 4.836412, z: 13.555809}
   m_Center: {x: -0.2778137, y: -1.9182041, z: 6.7136903}
-=======
-  m_SourcePrefab: {fileID: 100100000, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
->>>>>>> Stashed changes
-=======
-  m_SourcePrefab: {fileID: 100100000, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
->>>>>>> Stashed changes
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
 >>>>>>> Stashed changes
@@ -1216,8 +1198,6 @@ PrefabInstance:
       value: building1 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -1467,12 +1447,6 @@ CanvasRenderer:
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
 >>>>>>> Stashed changes
-=======
-  m_SourcePrefab: {fileID: 100100000, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
->>>>>>> Stashed changes
-=======
-  m_SourcePrefab: {fileID: 100100000, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
->>>>>>> Stashed changes
 --- !u!1001 &888254407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1695,8 +1669,6 @@ Transform:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   m_LocalEulerAnglesHint: {x: 22.398, y: 0, z: 0}
 --- !u!1 &982456552
 GameObject:
@@ -1853,14 +1825,6 @@ CanvasRenderer:
   m_LocalEulerAnglesHint: {x: 39.08, y: 0, z: 0}
 --- !u!1001 &1099718395
 >>>>>>> Stashed changes
-=======
-  m_LocalEulerAnglesHint: {x: 39.08, y: 0, z: 0}
---- !u!1001 &1099718395
->>>>>>> Stashed changes
-=======
-  m_LocalEulerAnglesHint: {x: 39.08, y: 0, z: 0}
---- !u!1001 &1099718395
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1921,15 +1885,9 @@ PrefabInstance:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   m_SourcePrefab: {fileID: 100100000, guid: a3ac454ebcb68804abba337d02bd5557, type: 3}
 --- !u!1 &1018694929
 =======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -2226,12 +2184,6 @@ PrefabInstance:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -2250,18 +2202,12 @@ GameObject:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   - component: {fileID: 1018694932}
   - component: {fileID: 1018694931}
   - component: {fileID: 1018694930}
   m_Layer: 0
   m_Name: EventSystem
 =======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -2275,12 +2221,6 @@ GameObject:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -2293,8 +2233,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -2312,19 +2250,11 @@ GameObject:
 =======
 --- !u!114 &1433617478
 >>>>>>> Stashed changes
-=======
---- !u!114 &1433617478
->>>>>>> Stashed changes
-=======
---- !u!114 &1433617478
->>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -2375,22 +2305,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 >>>>>>> Stashed changes
-=======
-  m_GameObject: {fileID: 1433617477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb240d55c522de64f8a4a1bb1ecdbba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
->>>>>>> Stashed changes
-=======
-  m_GameObject: {fileID: 1433617477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb240d55c522de64f8a4a1bb1ecdbba4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
->>>>>>> Stashed changes
   buildingPrefabs:
   - {fileID: 8719828748562723771, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
   - {fileID: 7606798398928816087, guid: 25d47fb4e11a167429328f611cf5d2ea, type: 3}
@@ -2401,12 +2315,6 @@ Transform:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -2418,8 +2326,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -3294,10 +3200,6 @@ BoxCollider:
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_GameObject: {fileID: 1433617477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -13.56, z: 36}
@@ -3311,12 +3213,6 @@ BoxCollider:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -3463,8 +3359,6 @@ PrefabInstance:
       value: building1 (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -4086,12 +3980,6 @@ CanvasRenderer:
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
 >>>>>>> Stashed changes
-=======
-  m_SourcePrefab: {fileID: 100100000, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
->>>>>>> Stashed changes
-=======
-  m_SourcePrefab: {fileID: 100100000, guid: 7e0326dd0b4db384db106dd98534aa1c, type: 3}
->>>>>>> Stashed changes
 --- !u!1 &1831686443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: addca58c4f6e9ec4e9bf6973c6d4b58f, type: 3}
@@ -4213,8 +4101,6 @@ MonoBehaviour:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   serializedVersion: 2
   m_Size: {x: 5.589259, y: 5.2078853, z: 8.846027}
   m_Center: {x: -1.7511681, y: -0.78037506, z: 3.9229872}
@@ -4324,10 +4210,6 @@ CanvasRenderer:
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c00c55f92f1ca444482ddc966e959b97, type: 3}
   m_Name: 
@@ -4342,12 +4224,6 @@ CanvasRenderer:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
