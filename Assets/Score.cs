@@ -10,7 +10,8 @@ public class Score : MonoBehaviour
     public Text goalText;
 
     int score = 0;
-    int goal = 50;
+    int goal = 5;
+    bool isGamePaused = false;  // Flag to track if the game is paused
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +55,10 @@ public class Score : MonoBehaviour
 
     void ShowWinPanel()
     {
+        // Pause the game and show the win panel
+        Time.timeScale = 0f; // Pause the game
         winPanel.SetActive(true); // Activate the win panel
+        isGamePaused = true;
 
     }
 }
