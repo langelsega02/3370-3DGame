@@ -35,6 +35,7 @@ public class mech_movement : MonoBehaviour
         {
             animator.Play("Scene"); // Initial animation
         }
+        
     }
 
     void Update()

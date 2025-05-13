@@ -6,12 +6,16 @@ public class Death : MonoBehaviour
     public float fallThreshold = -5f;
     public float leftThreshold = -10f;
     public GameObject losePanel;
+    public GameObject cameraStart;
+    public GameObject cameraEnd;
 
     private Score scoreManager;
 
     void Start()
     {
         scoreManager = FindObjectOfType<Score>();
+        cameraStart.SetActive(true);
+        cameraEnd.SetActive(false);
     }
 
     void Update()
@@ -54,6 +58,8 @@ public class Death : MonoBehaviour
             losePanel.SetActive(true);
             Time.timeScale = 0f;
         }
+        cameraStart.SetActive(false);
+        cameraEnd.SetActive(true);
 
         Destroy(this.gameObject);
     }
