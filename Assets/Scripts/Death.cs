@@ -1,17 +1,21 @@
 using System.Collections;
 using UnityEngine;
 
-public class death : MonoBehaviour
+public class Death : MonoBehaviour
 {
     public float fallThreshold = -5f;
     public float leftThreshold = -10f;
     public GameObject losePanel;
+    public GameObject cameraStart;
+    public GameObject cameraEnd;
 
     private Score scoreManager;
 
     void Start()
     {
         scoreManager = FindObjectOfType<Score>();
+        cameraStart.SetActive(true);
+        cameraEnd.SetActive(false);
     }
 
     void Update()
@@ -29,14 +33,14 @@ public class death : MonoBehaviour
         }*/
     }
 
-    private void OnCollisionEnter(Collision collision)
+    /*private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("enemy"))
         {
             Destroy(collision.gameObject);
             Die("Hit enemy");
         }
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
@@ -54,6 +58,8 @@ public class death : MonoBehaviour
             losePanel.SetActive(true);
             Time.timeScale = 0f;
         }
+        cameraStart.SetActive(false);
+        cameraEnd.SetActive(true);
 
         Destroy(this.gameObject);
     }
