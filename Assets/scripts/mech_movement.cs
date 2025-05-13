@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class mech_movement : MonoBehaviour
@@ -9,48 +8,78 @@ public class mech_movement : MonoBehaviour
     public float centerPosition = 0f;
 
     public float snapSpeed = 30f;
-
-    public float forwardSpeed = 5f;
+    public float jumpForce = 8f;
 
     private bool isMoving = false;
-
     private float currentPosition;
-    // Start is called before the first frame update
+    private Rigidbody rb;
+    private Animator animator;
+
+    private int jumpCount = 0;
+    public int maxJumps = 2;
+    private bool wasGroundedLastFrame = false;
+
     void Start()
     {
         currentPosition = centerPosition;
         transform.position = new Vector3(currentPosition, transform.position.y, transform.position.z);
 
+        rb = GetComponent<Rigidbody>();
+        if (rb == null)
+            rb = gameObject.AddComponent<Rigidbody>();
+
+        rb.constraints = RigidbodyConstraints.FreezeRotation;
+
+        animator = GetComponent<Animator>();
+        if (animator != null)
+        {
+            animator.Play("Scene"); // Initial animation
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.forward * forwardSpeed * Time.deltaTime;
+        bool isGrounded = IsGrounded();
 
+        // Reset jump count only when we land
+        if (isGrounded && !wasGroundedLastFrame)
+        {
+            jumpCount = 0;
+        }
+
+        wasGroundedLastFrame = isGrounded;
+
+        // LANE SWITCHING
         if (!isMoving)
         {
-            if (!isMoving)
+            if (Input.GetKeyDown(KeyCode.A))
             {
-                if (Input.GetKeyDown(KeyCode.A))
-                {
-                    // Move left if not already in the left position
-                    if (currentPosition == centerPosition)
-                        StartCoroutine(SnapToPosition(leftPosition));
-                    else if (currentPosition == rightPosition)
-                        StartCoroutine(SnapToPosition(centerPosition));
-                }
-                else if (Input.GetKeyDown(KeyCode.D))
-                {
-                    // Move right if not already in the right position
-                    if (currentPosition == centerPosition)
-                        StartCoroutine(SnapToPosition(rightPosition));
-                    else if (currentPosition == leftPosition)
-                        StartCoroutine(SnapToPosition(centerPosition));
-                }
+                if (currentPosition == centerPosition)
+                    StartCoroutine(SnapToPosition(leftPosition));
+                else if (currentPosition == rightPosition)
+                    StartCoroutine(SnapToPosition(centerPosition));
+            }
+            else if (Input.GetKeyDown(KeyCode.D))
+            {
+                if (currentPosition == centerPosition)
+                    StartCoroutine(SnapToPosition(rightPosition));
+                else if (currentPosition == leftPosition)
+                    StartCoroutine(SnapToPosition(centerPosition));
             }
         }
 
+        // DOUBLE JUMP
+        if (Input.GetKeyDown(KeyCode.Space) && jumpCount < maxJumps)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z); // Reset vertical velocity
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            jumpCount++;
+
+            if (animator != null)
+            {
+                animator.Play("Scene"); // Optional: Replace with "Jump" if you have a jump animation
+            }
+        }
     }
 
     private IEnumerator SnapToPosition(float targetPosition)
@@ -68,14 +97,21 @@ public class mech_movement : MonoBehaviour
             float distanceCovered = (Time.time - startTime) * snapSpeed;
             float fractionOfJourney = distanceCovered / journeyLength;
             transform.position = Vector3.Lerp(startPosition, target, fractionOfJourney);
-
             yield return null;
         }
 
-        transform.position = target;  // Ensure the final position is exactly the target
-
+        transform.position = target;
         currentPosition = targetPosition;
-
         isMoving = false;
+
+        if (animator != null)
+        {
+            animator.Play("Scene"); // Optional: Replace with "Slide" or other
+        }
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics.Raycast(transform.position + Vector3.up * 0.1f, Vector3.down, 1.2f);
     }
 }
