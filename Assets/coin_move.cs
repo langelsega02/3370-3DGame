@@ -6,6 +6,7 @@ public class coin_move : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float destroyZ = -15f; //destroy when off screen
+    public int coinValue = 1; //coin value
 
     // Update is called once per frame
     void Update()
@@ -27,13 +28,13 @@ public class coin_move : MonoBehaviour
         {
             Debug.Log("Coin collected!"); //debug
 
-            /*ScoreManager scoreManager = FindObjectOfType<ScoreManager>();
+            Score scoreManager = FindObjectOfType<Score>();
             if (scoreManager != null)
             {
                 Debug.Log("Adding score...");
                 Debug.Log("Adding score...");
                 scoreManager.AddScore(coinValue);
-            }*/
+            }
 
             Destroy(gameObject);
 
