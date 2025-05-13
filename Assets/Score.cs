@@ -10,7 +10,7 @@ public class Score : MonoBehaviour
     public Text goalText;
 
     int score = 0;
-    int goal = 5;
+    int goal = 15;
     bool isGamePaused = false;  // Flag to track if the game is paused
 
     // Start is called before the first frame update

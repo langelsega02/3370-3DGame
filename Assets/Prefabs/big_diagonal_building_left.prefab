@@ -368,6 +368,7 @@ Transform:
   - {fileID: 683879907271761981}
   - {fileID: 4701889249991998089}
   - {fileID: 8665886055166670354}
+  - {fileID: 1602293331582674533}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -56.626, y: 90, z: 180}
@@ -380,7 +381,7 @@ BoxCollider:
   m_GameObject: {fileID: 5835626459586426641}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 5.589259, y: 5.2078853, z: 8.865201}
   m_Center: {x: -1.7511684, y: -0.7803745, z: 3.932573}
@@ -396,8 +397,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb969a396b290814684fbb375c96f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   destroyZ: -15
+--- !u!1 &5916935113918573192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1602293331582674533}
+  - component: {fileID: 952847416111196200}
+  - component: {fileID: 2391799496228973083}
+  - component: {fileID: 1723847443474731003}
+  m_Layer: 0
+  m_Name: BuildingDeathZone
+  m_TagString: DeathZone
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1602293331582674533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5916935113918573192}
+  m_LocalRotation: {x: -0.6225149, y: -0.3353733, z: -0.6225149, w: -0.3353733}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.42239907, y: 0.29032248, z: 0.6485617}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6608926849302310315}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &952847416111196200
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5916935113918573192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6385386, y: 4.659081, z: 3.0935092}
+  m_Center: {x: 5.0969667, y: 13.202568, z: -5.697273}
+--- !u!65 &2391799496228973083
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5916935113918573192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.7989287, y: 3.3512483, z: 3.4059806}
+  m_Center: {x: 7.9296885, y: 15.64861, z: -5.9270234}
+--- !u!65 &1723847443474731003
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5916935113918573192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 2.9830458, y: 1.5246928, z: 2.314173}
+  m_Center: {x: 8.408929, y: 12.158681, z: -6.430515}
 --- !u!1 &5932446638024809365
 GameObject:
   m_ObjectHideFlags: 0

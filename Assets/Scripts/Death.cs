@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class death : MonoBehaviour
+public class Death : MonoBehaviour
 {
     public float fallThreshold = -5f;
     public float leftThreshold = -10f;
@@ -29,14 +29,14 @@ public class death : MonoBehaviour
         }*/
     }
 
-    private void OnCollisionEnter(Collision collision)
+    /*private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("enemy"))
         {
             Destroy(collision.gameObject);
             Die("Hit enemy");
         }
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
